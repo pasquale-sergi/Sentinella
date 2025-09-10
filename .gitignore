@@ -45,6 +45,8 @@ yarn-error.log*
 /frontend/.git
 /frontend/*.log
 /frontend/*.tsbuildinfo
+/frontend/.env.development  # <--- ADD THIS LINE
+/frontend/.env.local
 
 # Java (Backend) ignores
 /backend/target/
