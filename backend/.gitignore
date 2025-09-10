@@ -31,5 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
-application.properties
-C:\Users\pasqu\Projects\smart_env_device\Sentinella\src\main\resources\application.properties
+application-dev.properties
+C:\Users\pasqu\Projects\smart_env_device\Sentinella\src\main\resources\application-dev.properties
