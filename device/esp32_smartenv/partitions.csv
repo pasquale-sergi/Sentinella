@@ -1,0 +1,11 @@
+# Name,   Type, SubType, Offset,  Size,   Flags
+# nvs: NVS (Factory Data Area - where WiFi creds, NVS params are stored)
+nvs,      data, nvs,     0x9000,  0x5000,
+# otadata: OTA data partition
+otadata,  data, ota,     0xe000,  0x2000,
+# app0: Our main application
+app0,     app,  ota_0,   0x10000, 0x2D0000,
+# coredump: For crash diagnostics (optional, but good)
+coredump, data, coredump,,       0x10000,
+# spiffs: File system for user data (not strictly needed for Sentinella V1)
+spiffs,   data, spiffs,  ,        0xD0000,

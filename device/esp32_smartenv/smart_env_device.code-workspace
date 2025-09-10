@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Projects/smart_env_device"
+		},
+		{
+			"name": "esp32_smartenv",
+			"path": "."
+		},
+		{
+			"name": "test",
+			"path": "../test"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"new": "cpp",
+			"ostream": "cpp",
+			"*.bak": "cpp",
+			"cmath": "cpp",
+			"complex": "cpp"
+		}
+	}
+}
