@@ -114,6 +114,10 @@ const scrollToSection = (id) => {
     <footer  id="demo-access-section" class="demo-footer">
       <p class="demo-info">Check Sentinella in Action</p>
 
+      <p class="demo-info-message">
+        <strong style="color: var(--color-accent-orange);">Note:</strong> The backend for the live demo is currently undergoing network configuration and may be temporarily unavailable. I apologize for any inconvenience. Please check back soon!
+      </p>
+
       
      
       <div class="test-credentials-block">
