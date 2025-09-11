@@ -1,5 +1,6 @@
 <script setup>
 import { useAuthStore } from '@/stores/auth';
+
 const authStore = useAuthStore();
 
 const scrollToSection = (id) => {
@@ -50,6 +51,23 @@ const scrollToSection = (id) => {
       <p>A simplified overview of how Sentinella works:</p>
       <img src="@/assets/diagram.png" alt="Sentinella Architecture Diagram" class="architecture-diagram"/>
       
+    </section>
+
+    <section class="section-container hardware-design-section">
+      <h2 class="section-title">Hardware Design & Enclosure</h2>
+      <p>
+        Beyond the software architecture, Sentinella features a custom-designed 3D-printed enclosure,
+        crafted to integrate all electronic components and optimize sensor performance.
+        This design facilitates easy assembly, protects the internal circuitry, and ensures efficient
+        airflow for accurate environmental readings.
+      </p>
+      <img src="@/assets/design.png" alt="Sentinella 3D Hardware Design" class="hardware-design-diagram"/>
+      <div class="hardware-details">
+        <p>
+          The enclosure includes designated sections for the <strong class="highlight-keyword">ESP32 microcontroller</strong>, the <strong class="highlight-keyword">LiPo battery</strong>, and crucial external interfaces. Key features like the <strong class="highlight-keyword">USB-C port</strong> provide convenient charging, while the <strong class="highlight-keyword">on/off switch with integrated LED</strong> offers intuitive control and status indication. Three distinct <strong class="highlight-keyword">airflow sections</strong> are engineered to guide air efficiently over the <strong class="highlight-keyword">BME680 sensor</strong>, ensuring precise and responsive environmental data collection.
+        </p>
+
+      </div>
     </section>
 
     <section class="section-container">
@@ -420,6 +438,44 @@ strong {
 .github-link a:hover {
     text-decoration: underline;
 }
+.hardware-design-section {
+  text-align: center;
+  background-color: var(--color-background-soft); /* Slightly different background */
+  border-left: 5px solid var(--color-accent-blue); /* A nice accent border */
+}
+
+.hardware-design-diagram {
+  max-width: 90%; /* Adjust size as needed */
+  height: auto;
+  margin: 30px auto;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hardware-details {
+  text-align: left; /* Align text within this block */
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.hardware-details p {
+  margin-bottom: 15px;
+}
+
+.call-to-action-note {
+  font-style: italic;
+  color: #555;
+  margin-top: 25px;
+}
+
+/* Ensure consistent image styling */
+.architecture-diagram {
+  margin: 30px auto; /* Add margin for spacing */
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -431,6 +487,9 @@ strong {
   .tech-stack-section .tech-grid { grid-template-columns: 1fr; }
   .section-container { padding: 20px; }
   p, ul li { font-size: 0.95rem; }
+  .hardware-design-diagram {
+    max-width: 100%;
+  }
 }
 
 .demo-button-wrapper {

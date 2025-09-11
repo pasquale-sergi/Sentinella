@@ -28,7 +28,6 @@ onMounted(async () => {
         const readingsResponse = await axios.get(`/sensor-data/latest?sensorId=${sensor.id}`);
         if (readingsResponse.data && readingsResponse.data.length > 0) {
           latestReadings.value[sensor.id] = readingsResponse.data[0];
-          console.log(`Latest reading for sensor ${sensor.id}:`, latestReadings.value[sensor.id]);
         } else {
           latestReadings.value[sensor.id] = { error: 'No data available' };
           console.warn(`No data for sensor ${sensor.id}.`);
@@ -67,7 +66,6 @@ onMounted(async () => {
         <h2 class="sensor-name">{{ sensor.name }}</h2>
         <p class="sensor-device-id">ID: {{ sensor.deviceId }}</p>
         <p class="sensor-location">Location: {{ sensor.location || 'N/A' }}</p>
-        <p class="sensor-api-key">API Key: <span class="api-key-value">{{ sensor.apiKey || 'N/A' }}</span></p>
         
         <hr class="card-divider" />
 
