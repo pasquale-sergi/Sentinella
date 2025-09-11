@@ -5,7 +5,7 @@ import router from './router';
 import axios from 'axios'; 
 import './assets/base.css';
 
-const API_URL = process.env.VUE_APP_API_BASE_URL || 'http://localhost:8081/api'; 
+const API_URL = process.env.VUE_APP_API_BASE_URL; 
 axios.defaults.baseURL = API_URL;
 
 const app = createApp(App);

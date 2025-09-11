@@ -3,7 +3,6 @@ package com.sentinella.Sentinella.entity;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
-import javax.annotation.processing.Generated;
 import java.util.HashSet;
 import java.util.Set;
 

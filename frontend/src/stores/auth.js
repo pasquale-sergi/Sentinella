@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 import axios from 'axios';
 
-const API_URL = process.env.VUE_APP_API_BASE_URL || 'http://localhost:8081/api'; 
+const API_URL = process.env.VUE_APP_API_BASE_URL; 
 export const useAuthStore = defineStore('auth', {
   state: () => ({
     user: JSON.parse(localStorage.getItem('user')), 
