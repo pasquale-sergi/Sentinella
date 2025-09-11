@@ -117,7 +117,7 @@ const scrollToSection = (id) => {
  
       <p class="github-link">
         Links:
-        <a href="https://github.com/your-username/sentinella-frontend" target="_blank">GitHub Repo</a> 
+        <a href="https://github.com/pasquale-sergi/Sentinella" target="_blank">GitHub Repo</a> 
 
       </p>
     </footer>
