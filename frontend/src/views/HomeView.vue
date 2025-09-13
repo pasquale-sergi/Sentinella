@@ -114,10 +114,27 @@ const scrollToSection = (id) => {
     <footer  id="demo-access-section" class="demo-footer">
       <p class="demo-info">Check Sentinella in Action</p>
 
-      <p class="demo-info-message">
-        <strong style="color: var(--color-accent-orange);">Note:</strong> The backend for the live demo is currently undergoing network configuration and may be temporarily unavailable. I apologize for any inconvenience. Please check back soon!
-      </p>
+      <div class="network-status-note">
+        <strong style="color: var(--color-accent-orange);">Note:</strong> The live demo's backend is hosted on a Raspberry Pi within a local network and is currently undergoing router configuration for public access. The dashboard functionality (login, live data) may be temporarily unavailable or show network errors. We appreciate your patience!
+      </div>
 
+      <p class="demo-info-message">
+
+        Please check this quick demo to see how the dashboard would look like. Anomaly detecting demo coming soon!
+        </p>
+        <div class="video-wrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/7JPhpkSq8h0"
+            title="Sentinella Anomaly Detection Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      
       
      
       <div class="test-credentials-block">
@@ -147,6 +164,35 @@ const scrollToSection = (id) => {
 </template>
 
 <style scoped>
+
+.network-status-note {
+  background-color: rgba(255, 193, 7, 0.1); /* Light orange background */
+  border: 1px solid var(--color-accent-orange);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 30px auto;
+  max-width: 700px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.section-subtitle {
+  font-size: 1.8rem; /* Smaller than main title, larger than normal text */
+  color: var(--color-heading);
+  margin-top: 30px; /* Space above subtitle */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Ensure existing video section styles are also applied to this new video container */
+.video-demo-section {
+  /* Inherits from .section-container */
+  text-align: center;
+  background-color: var(--color-background-soft);
+  margin-top: 30px; /* Adjust spacing from previous content */
+}
 
 .button-demo {
   background-color: #e1ecf4;
